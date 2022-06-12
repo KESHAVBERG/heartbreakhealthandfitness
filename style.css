@@ -12,21 +12,9 @@
     font-size: 80px;
     color: rgb(192, 60, 159);
     text-align: center;
-    /* -webkit-animation: glow 1s ease-in-out infinite alternate; */
-    /* -moz-animation: glow 1s ease-in-out infinite alternate; */
     animation: flicker  5s  infinite alternate;
   }
   
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px #fff, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073, 0 0 10px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 15px #f16fb0, 0 0 20px #f16fb0, 0 0 20px #f16fb0, 0 0 30px #f16fb0, 0 0 20px #f16fb0, 0 0 30px #f16fb0;
-    }
-  }
-
-
 
 @media only screen and (max-width: 675px){
     .title{
@@ -78,3 +66,30 @@
         text-shadow: none;
     }    
   }
+
+  /* tagline stylee */
+
+
+  .tagline{
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 600;
+    color: rgb(192, 60, 159);
+  }
+
+  @media only screen and (max-width: 372px){
+    .tagline{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 328px){
+    .tagline{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 363px){
+    .title{
+        padding-top: 150px;
+        }
+}
