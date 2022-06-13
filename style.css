@@ -1,95 +1,116 @@
-.header-section{
+.header-section {
     height: 500px;
-    width: 100%;
+    width : 100%;
 }
 
-.title{
+.title {
     font-weight: bold;
     padding-top: 100px;
 }
 
 .title {
-    font-size: 80px;
-    color: rgb(236, 119, 207);
+    font-size : 80px;
+    color     : rgb(236, 119, 207);
     text-align: center;
-    animation: flicker  5s  infinite alternate;
-  }
-  
+    animation : flicker 5s infinite alternate;
+}
 
-@media only screen and (max-width: 675px){
-    .title{
+
+@media only screen and (max-width: 675px) {
+    .title {
         font-size: 70px;
     }
 }
 
-@media only screen and (max-width: 583px){
-    .title{
+@media only screen and (max-width: 583px) {
+    .title {
         font-size: 60px;
     }
 }
 
-@media only screen and (max-width: 498px){
-    .title{
+@media only screen and (max-width: 498px) {
+    .title {
         font-size: 50px;
     }
 }
 
-@media only screen and (max-width: 408px){
-    .title{
+@media only screen and (max-width: 408px) {
+    .title {
         font-size: 40px;
     }
 }
 
-@media only screen and (max-width: 321px){
-    .title{
+@media only screen and (max-width: 321px) {
+    .title {
         font-size: 30px;
     }
 }
 
 @keyframes flicker {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
         text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(215, 128, 236),
-        0 0 80px rgb(192, 109, 212),
-        0 0 90px rgb(234, 121, 245),
-        0 0 100px rgb(206, 130, 236),
-        0 0 150px rgb(230, 150, 210);
-    
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px rgb(215, 128, 236),
+            0 0 80px rgb(192, 109, 212),
+            0 0 90px rgb(234, 121, 245),
+            0 0 100px rgb(206, 130, 236),
+            0 0 150px rgb(230, 150, 210);
+
     }
-    
-    20%, 24%, 55% {        
+
+    20%,
+    24%,
+    55% {
         text-shadow: none;
-    }    
-  }
+    }
+}
 
-  /* tagline stylee */
+/* tagline stylee */
 
 
-  .tagline{
-      text-transform: uppercase;
-      font-size: 20px;
-      font-weight: 600;
-    color: rgb(192, 60, 159);
-  }
+.tagline {
+    text-transform: uppercase;
+    font-size     : 20px;
+    font-weight   : 600;
+    color         : rgb(192, 60, 159);
+}
 
-  @media only screen and (max-width: 372px){
-    .tagline{
+@media only screen and (max-width: 372px) {
+    .tagline {
         font-size: 20px;
     }
 }
-@media only screen and (max-width: 328px){
-    .tagline{
+
+@media only screen and (max-width: 328px) {
+    .tagline {
         font-size: 15px;
     }
 }
 
-@media only screen and (max-width: 363px){
-    .title{
+@media only screen and (max-width: 363px) {
+    .title {
         padding-top: 150px;
-        }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .title {
+        padding-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .title {
+        padding-top: 180px;
+    }
 }
