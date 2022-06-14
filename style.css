@@ -1,5 +1,12 @@
+*{
+    font-family: 'Inconsolata', monospace;
+font-family: 'Roboto', sans-serif;
+}
+
 .header-section {
-    height: 500px;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
     width : 100%;
 }
 
@@ -15,6 +22,11 @@
     animation : flicker 5s infinite alternate;
 }
 
+section{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
 
 @media only screen and (max-width: 675px) {
     .title {
@@ -112,5 +124,43 @@
 @media only screen and (max-width: 290px) {
     .title {
         padding-top: 180px;
+    }
+}
+
+/* reveal */
+
+.current{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.current.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* content styling */
+
+.content{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 725px) {
+    .content {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .content {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 331px) {
+    .content {
+        font-size: 17px;
     }
 }

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>HEARTHBREAK?</title>
 </head>
+
 <body>
 
     <section class="section BLUE header-section center-align">
@@ -17,9 +22,42 @@
         <p class="tagline">Trust me,it's gonna be fine</p>
     </section>
 
+    <section class="section page-1 container current valign-wrapper">
+       <p class="content left-align">There's a gap between what you look like and what you feel like. The only way to bridge the gap is by writing about what's going on inside you. They can help externalise internal things. The moment you try and turn a thought into words, you place it into a shared world. By doing this, you can really understand what you're going through. Journals won't capture your feelings but will only release em.</p>
+    </section>
 
+    <section class="section page-2 container current valign-wrapper">
+        <p class="content left-align">There's a gap between what you look like and what you feel like. The only way to bridge the gap is by writing about what's going on inside you. They can help externalise internal things. The moment you try and turn a thought into words, you place it into a shared world. By doing this, you can really understand what you're going through. Journals won't capture your feelings but will only release em.</p>
+     </section>
+
+     <section class="section page-3 container current valign-wrapper">
+        <p class="content left-align">There's a gap between what you look like and what you feel like. The only way to bridge the gap is by writing about what's going on inside you. They can help externalise internal things. The moment you try and turn a thought into words, you place it into a shared world. By doing this, you can really understand what you're going through. Journals won't capture your feelings but will only release em.</p>
+     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+
+
+    <script>
+        var allcurrents = document.querySelectorAll('.current');
+
+        window.addEventListener('scroll', showContents);
+        function showContents() {
+            for (let i = 0; i < allcurrents.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = allcurrents[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    allcurrents[i].classList.add('active');
+                } else {
+                    allcurrents[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
 </body>
+
 </html>
