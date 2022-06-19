@@ -8,6 +8,7 @@ font-family: 'Roboto', sans-serif;
     justify-content: center;
     height: 700px;
     width : 100%;
+    background-color: rgba(82, 113, 255, 5);
 }
 
 .title {
